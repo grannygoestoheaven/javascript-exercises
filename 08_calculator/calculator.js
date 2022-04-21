@@ -8,23 +8,31 @@ const subtract = function(nb1, nb2) {
   return nb1 - nb2;
 };
 
-const sum = function(...args) {
+const sum = function(args) {
   let i = 0;
   let sum = args[0];
+  if (args.length === 0)
+    {
+        return 0;
+    }
+    else if (args.length === 1)
+    {
+        return args[0];
+    }
   while (i < args.length - 1)
   {
-      sum = sum + array[i + 1];
+      sum = sum + args[i + 1];
       i++;
   }
   return sum;
 };
 
-const multiply = function(...args) {
+const multiply = function(args) {
   let i = 0;
   let res = args[0];
   while (i < args.length - 1)
   {
-      res = res * array[i + 1];
+      res = res * args[i + 1];
       i++;
   }
   return res;
