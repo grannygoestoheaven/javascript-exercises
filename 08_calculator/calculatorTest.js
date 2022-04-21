@@ -6,16 +6,16 @@ let singleArgArray = [7];
 const arraySum = function(args)
 {
     let i = 0;
-    let sum = array[0];
-    if (array.length === 0)
+    let sum = args[0];
+    if (args.length === 0)
     {
         return 0;
     }
-    else if (array.length === 1)
+    else if (args.length === 1)
     {
-        return array[0];
+        return args[0];
     }
-    while (i < array.length - 1)
+    while (i < args.length - 1)
     {
         sum = sum + args[i + 1];
         i++;
@@ -34,6 +34,10 @@ const multiply = function(args)
     }
     return res;
 }
+
+const power = function() {
+	
+};
 
 // console.log(arraySum(array));
 // console.log(arraySum(emptyArray));
