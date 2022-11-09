@@ -7,7 +7,9 @@ const findTheOldest = function(array)
         if (!(element.yearOfDeath))
           element.yearOfDeath = new Date().getFullYear();
       })
+
       array.map(element => element.age = element.yearOfDeath - element.yearOfBirth);
+      
       if (acc.age < current.age)
       {
           return current; // with reduce it means that the returned value will be assigned to acc

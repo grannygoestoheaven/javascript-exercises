@@ -5,13 +5,13 @@
 //     reversedString = reversedString.toString();
 //     reversedString = reversedString.replace(/,/g, '');
 
-    // if (reversedString === string)
-    //     return true;
-    // else
-    //     return false;
+//     if (reversedString === string)
+//         return true;
+//     else
+//         return false;
 // };
 
-const palindromes = function (string)
+const palindromes = function(string)
 {
     string = string.split("");
     let lowString = string.map(function(element)
@@ -27,6 +27,7 @@ const palindromes = function (string)
     });
     lowString = lowString.toString();
     lowString = lowString.replace(/,/g, '');
+    
     const reverseString = function(lowString)
     {
         lowString = lowString.split("");

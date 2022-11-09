@@ -1,4 +1,4 @@
-const getTheTitles = array => array.map(element => element.title);
+// const getTheTitles = array.map(element => element.title);
 
 
 // Do not edit below this line
@@ -15,4 +15,10 @@ const books = [
     }
   ]
 
-console.log(getTheTitles(books));
+  function getTitles()
+  {
+    return books.map(book => book.title);
+  }
+
+// console.log(getTheTitles(books));
+console.log(getTitles(books));

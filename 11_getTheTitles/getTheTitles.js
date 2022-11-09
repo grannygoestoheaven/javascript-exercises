@@ -11,12 +11,12 @@
 //     return newArr;
 // }
 
-const getTheTitles = array => array.map(element => element.title);
-
 /*
-- get the value corresponding the key 'title' in an object --> use Object.prop and precise the key from which we want the value from
+- get the value corresponding to the key 'title' in an object --> use Object.prop and precise the key from which we want the value from
 - do a map method of the array of objects that we have and pass in arguments the function we made above
 */
+
+const getTheTitles = array => array.map(book => book.title);
 
 // Do not edit below this line
 module.exports = getTheTitles;
